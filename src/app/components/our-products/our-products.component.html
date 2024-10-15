@@ -1,16 +1,108 @@
-<div class="outher-circle">
-  <div class="outher-circle-content">
-    <i class="fas fa-bullhorn"></i>
-    <i class="fas fa-cog"></i>
-    <i class="fas fa-search"></i>
-    <i class="fas fa-comments"></i>
-    <i class="fas fa-laptop-code"></i>
-    <i class="fas fa-globe-americas"></i>
-    <i class="fas fa-lightbulb"></i>
-    <i class="fas fa-project-diagram"></i>
+<div class="container mx-auto py-[100px]">
+  <div class="flex flex-row gap-[80px] items-center">
+    <div class="size-[400px] relative flex-basis-1 w-[400px]">
+      <div class="main-circle" (click)="currentIndex = -1"></div>
+      @for (pieace of pieChartPieaces; track pieace; let idx = $index) {
+        <a [id]="pieace.id" class="uygulamalar" [ngClass]="{active: idx === currentIndex}" (click)="currentIndex = idx">
+          <img [src]="'../../../assets/images/' + pieace.img">
+        </a>
+      }
+    </div>
+  
+    <div class="grow flex-1">
+      @if(currentIndex === -1) {
+        <div class="grid grid-cols-2 gap-2 w-full">
+          <div class="bg-[#009bde] p-3 flex flex-col items-center justify-center ">
+            <h4 class="font-open text-white font-bold text-2xl mb-0">7.000+</h4>
+            <p class="font-oswald text-white font-medium text-xl mb-0">Kompaniyalar</p>
+          </div>
+          <div class="bg-[#009bde] p-3 flex flex-col items-center justify-center ">
+            <h4 class="font-open text-white font-bold text-2xl mb-0">50.000+</h4>
+            <p class="font-oswald text-white font-medium text-xl mb-0">Orqa Ofis Foydalanuvchilari</p>
+          </div>
+          <div class="bg-[#009bde] p-3 flex flex-col items-center justify-center ">
+            <h4 class="font-open text-white font-bold text-2xl mb-0">30.000+</h4>
+            <p class="font-oswald text-white font-medium text-xl mb-0">Do'konlar</p>
+          </div>
+          <div class="bg-[#009bde] p-3 flex flex-col items-center justify-center ">
+            <h4 class="font-open text-white font-bold text-2xl mb-0">60.000+</h4>
+            <p class="font-oswald text-white font-medium text-xl mb-0">Do'kon Foydalanuvchilari </p>
+          </div>
+          <div class="bg-[#009bde] p-3 flex flex-col items-center justify-center ">
+            <h4 class="font-open text-white font-bold text-2xl mb-0">70+</h4>
+            <p class="font-oswald text-white font-medium text-xl mb-0">Yechim Hamkorlari</p>
+          </div>
+          <div class="bg-[#009bde] p-3 flex flex-col items-center justify-center ">
+            <h4 class="font-open text-white font-bold text-2xl mb-0">30+</h4>
+            <p class="font-oswald text-white font-medium text-xl mb-0">Mamlakatlar</p>
+          </div>
+        </div>
+      } @else {
+        @switch (currentIndex) {
+          @case(0) {
+            <h4 class="font-open text-[#009bde] text-2xl font-bold mb-3">Moliyaviy / Hisob </h4>
+            <ul class="flex flex-col gap-3">
+              <li class="font-oswald font-light text-black text-lg"> Mijoz va Ta’minotchilarBoshqaruvi </li>
+              <li class="font-oswald font-light text-black text-lg"> BankOperatsiyalari va Integratsiyalar </li>
+              <li class="font-oswald font-light text-black text-lg"> e-Invoice </li>
+              <li class="font-oswald font-light text-black text-lg"> Narxlar va NarxO’zgartirish </li>
+              <li class="font-oswald font-light text-black text-lg"> NarxMarkaziBoshqaruvi </li>
+              <li class="font-oswald font-light text-black text-lg"> DoimiyAktivlar  </li>
+              <li class="font-oswald font-light text-black text-lg"> e-QaytaHisoblash, e-Arxiv  </li>
+              <li class="font-oswald font-light text-black text-lg"> e-Declaratsiya va e-Kitob  </li>
+              <li class="font-oswald font-light text-black text-lg"> ByudjetBoshqaruvi </li>
+            </ul>
+          }
+          @case(1) {
+            <h4 class="font-open text-[#009bde] text-2xl font-bold mb-3">Mahsulot Boshqaruvi </h4>
+            <ul class="flex flex-col gap-3">
+              <li class="font-oswald font-light text-black text-lg"> Tovar Rejalashtirish </li>
+              <li class="font-oswald font-light text-black text-lg"> BOM Sotuvlar Konfiguratsiyasi </li>
+              <li class="font-oswald font-light text-black text-lg"> Raqamli Kanallar uchun Inventarizatsiya Boshqaruvi  </li>
+              <li class="font-oswald font-light text-black text-lg"> Ko'zoynak Mahsulotlarini Boshqarish va Sog'liqni Saqlash Vazirligi (ÜTS) mahsulot monitoring tizimi  </li>
+              <li class="font-oswald font-light text-black text-lg"> KategoriyaBoshqaruvi va MahsulotXususiyatlari </li>
+              <li class="font-oswald font-light text-black text-lg"> MahsulotTa’minoti, Tugatish va O’tkazish   </li>
+              <li class="font-oswald font-light text-black text-lg"> MahsulotTahlillari </li>
+            </ul> 
+          }
+          @case(2) {
+            <h4 class="font-open text-[#009bde] text-2xl font-bold mb-3">Xarid qilish</h4>
+            <ul class="flex flex-col gap-3">
+              <li class="font-oswald font-light text-black text-lg"> XaridJarayoniniBoshqarish, ASN</li>
+              <li class="font-oswald font-light text-black text-lg"> Takliflar</li>
+              <li class="font-oswald font-light text-black text-lg"> Import </li>
+              <li class="font-oswald font-light text-black text-lg"> KMaterial/XomAshyoBoshqaruvi </li>
+              <li class="font-oswald font-light text-black text-lg"> XaridSo'roviniBoshqarish </li>
+              <li class="font-oswald font-light text-black text-lg"> Konsignatsiya Xaridlari  </li>
+              <li class="font-oswald font-light text-black text-lg"> NarxBoshqaruvi </li>
+            </ul> 
+          }
+          @case(3) {
+            <h4 class="font-open text-[#009bde] text-2xl font-bold mb-3">Ishlab Chiqarish </h4>
+            <ul class="flex flex-col gap-3">
+              <li class="font-oswald font-light text-black text-lg"> Ishlab Chiqarish Rejalashtirish</li>
+              <li class="font-oswald font-light text-black text-lg"> Namuna/Model Monitoring</li>
+              <li class="font-oswald font-light text-black text-lg"> Operativ Mahsuldorlik  </li>
+              <li class="font-oswald font-light text-black text-lg"> Ish Buyurtmasi Jarayonini Monitoring  </li>
+              <li class="font-oswald font-light text-black text-lg"> Ehtiyojlarni Rejalashtirish  </li>
+              <li class="font-oswald font-light text-black text-lg"> Mahsulot/Xom Ashyo Sifat Nazorati  </li>
+            </ul> 
+          }
+          @case(4) {
+            index 4
+          }
+          @case(5) {
+            index 5
+          }
+          @case(6) {
+            index 6
+          }
+          @case(7) {
+            index 7
+          }
+        }
+      }
+     
+    </div>
   </div>
-  <div class="outher-circle-strokes">
-    <div></div><div></div><div></div><div></div>
-  </div>
-  <div class="inner-circle">Key<br>Skills</div>
 </div>

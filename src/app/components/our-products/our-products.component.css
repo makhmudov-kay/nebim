@@ -1,103 +1,121 @@
-@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
-
-:root{
-  --bg-color: white;
-}
-
-body{
-  margin: 0;
-  width:100%;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  background-color: var(--bg-color);
-}
-
-.outher-circle {
-  box-sizing: border-box;
-  position: relative;
-  width: 25em;
-  height: 25em;
-  border-radius: 50%;
-  background: conic-gradient(
-    #f7863f 0% 12.5%,
-    #669696 12.5% 25%,
-    #73b398 25% 37.5%,
-    #31a2a6 37.5% 50%,
-    #607890 50% 62.5%,
-    #565656 62.5% 75%,
-    #73b398 75% 87.5%,
-    #33a1a8 87.5% 100%
-  );
-}
-
-.outher-circle-strokes > div {
+.main-circle {
+  background: url(../../../assets/images/nebim-v3-en.png) no-repeat center center transparent;
+  width: 244px;
+  height: 244px;
   position: absolute;
-  left: 47.5%;
-  top: -1%;
-  width: 5%;
-  height: 102%;
-  transform-origin: center;
-  background-color: var(--bg-color);
+  left: 50%;
+  top: 50%;
+  margin-left: -122px;
+  margin-top: -122px;
+  z-index: 10;
+  cursor: pointer;
 }
 
-.outher-circle-strokes > div:nth-child(2) {
-  transform: rotate(45deg);
-}
-
-.outher-circle-strokes > div:nth-child(3) {
-  transform: rotate(90deg);
-}
-
-.outher-circle-strokes > div:nth-child(4) {
-  transform: rotate(135deg);
-}
-
-.inner-circle {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font-size: 2.5em;
-  font-family: sans-serif;
-  color: #3e3e3e;
-  position: relative;
-  width: 50%;
-  height: 50%;
-  top: 25%;
-  left: 25%;
-  border-radius: 50%;
-  background-image: radial-gradient(
-    #a6a6a6 60%, var(--bg-color) 60%
-  );
-}
-
-.outher-circle-content {
+.uygulamalar {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.outher-circle-content i {
-  align-self: center;
-  color: white;
-  font-size: 2em;
-  padding: 40% 40%;
+#finans {
+  top: 60px;
+  left: 4px;
 }
 
-.outher-circle-content i:nth-child(1),
-.outher-circle-content i:nth-child(4),
-.outher-circle-content i:nth-child(6),
-.outher-circle-content i:nth-child(7) {
-  align-self: end;
+#finans.uygulamalar:hover, #finans.uygulamalar.active {
+  z-index: 10;
+  top: 49px;
+  left: -28px;
 }
 
-.outher-circle-content i:nth-child(2),
-.outher-circle-content i:nth-child(4),
-.outher-circle-content i:nth-child(6),
-.outher-circle-content i:nth-child(8) {
-  justify-self: end;
+#urun-yonetimi {
+  top: 4px;
+  left: 61px;
+}
+
+#urun-yonetimi.uygulamalar:hover, #urun-yonetimi.uygulamalar.active {
+  z-index: 10;
+  top: -15px;
+  left: 53px;
+}
+
+#satin-alma {
+  top: 4px;
+  right: 62px;
+}
+
+#satin-alma.uygulamalar:hover, #satin-alma.uygulamalar.active {
+  z-index: 10;
+  top: -19px;
+  right: 53px;
+}
+
+#uretim {
+  top: 65px;
+    right: 3px;
+}
+
+#uretim.uygulamalar:hover, #uretim.uygulamalar.active {
+  z-index: 10;
+  top: 57px;
+    right: -16px;
+}
+
+#depo-yonetimi {
+  bottom: 55px;
+  right: 4px;
+}
+
+#depo-yonetimi.uygulamalar:hover, #depo-yonetimi.uygulamalar.active {
+  z-index: 10;
+  bottom: 47px;
+  right: -18px;
+}
+
+#satis {
+  bottom: -3px;
+  right: 62px;
+}
+
+#satis.uygulamalar:hover, #satis.uygulamalar.active {
+  z-index: 10;
+  bottom: -30px;
+  right: 47px;
+}
+
+#crm {
+  bottom: -3px;
+  left: 62px;
+}
+
+#crm.uygulamalar:hover, #crm.uygulamalar.active {
+  z-index: 10;
+  bottom: -32px;
+  left: 46px;
+}
+
+#ik {
+  bottom: 58px;
+  left: 4px;
+}
+
+#ik.uygulamalar:hover, #ik.uygulamalar.active {
+  z-index: 10;
+  bottom: 46px;
+  left: -24px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #009bde;
 }
