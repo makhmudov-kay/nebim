@@ -1,0 +1,10 @@
+<h4 class="font-open text-[#009bde] text-2xl font-bold mb-3">
+  {{ title }}
+</h4>
+<ul class="flex flex-col gap-3">
+  @for (t of text; track $index) {
+  <li class="font-oswald font-light text-black text-lg">
+    {{ t }}
+  </li>
+  }
+</ul>
