@@ -1,0 +1,15 @@
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  ul li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: #009bde;
+  }
+  

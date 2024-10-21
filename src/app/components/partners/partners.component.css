@@ -1,0 +1,15 @@
+.carousel-slide-el {
+  height: 200px;
+}
+
+.carousel-slide-el img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.wrapper {
+  max-width: 1780px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
