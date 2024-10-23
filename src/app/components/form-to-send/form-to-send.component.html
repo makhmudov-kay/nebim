@@ -1,15 +1,19 @@
-<div class="form">
+<div class="form" id="contacts">
   <div class="container mx-auto px-3 py-[100px]">
     <h3
       class="font-open text-[28px] leading-[38px] text-[#fff] mb-9 font-semibold uppercase"
     >
-      Contact us
+      {{ "contacts.title" | translate }}
     </h3>
 
     <form nz-form nzLayout="vertical">
       <div class="grid grid-cols-2 gap-6">
         <nz-form-item>
-          <nz-form-label nzFor="email"><span class="text-white">Phone</span></nz-form-label>
+          <nz-form-label nzFor="email"
+            ><span class="text-white">{{
+              "contacts.phone" | translate
+            }}</span></nz-form-label
+          >
           <nz-form-control>
             <input
               nz-input
@@ -22,7 +26,11 @@
         </nz-form-item>
 
         <nz-form-item>
-          <nz-form-label nzFor="email"><span class="text-white">Full name</span></nz-form-label>
+          <nz-form-label nzFor="email"
+            ><span class="text-white">{{
+              "contacts.fullName" | translate
+            }}</span></nz-form-label
+          >
           <nz-form-control>
             <input
               nz-input
@@ -37,7 +45,11 @@
 
       <div>
         <nz-form-item>
-          <nz-form-label nzFor="email"><span class="text-white">Message</span></nz-form-label>
+          <nz-form-label nzFor="email"
+            ><span class="text-white">{{
+              "contacts.message" | translate
+            }}</span></nz-form-label
+          >
           <nz-form-control>
             <textarea
               nz-input
@@ -49,8 +61,13 @@
       </div>
     </form>
 
-    <button nz-button nzType="default" nzSize="large" class="flex flex-row items-center">
-      Отправить
+    <button
+      nz-button
+      nzType="default"
+      nzSize="large"
+      class="flex flex-row items-center"
+    >
+      {{ "contacts.send" | translate }}
       <span nz-icon nzType="send" nzTheme="outline"></span>
     </button>
   </div>

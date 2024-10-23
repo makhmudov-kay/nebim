@@ -1,22 +1,38 @@
-<div class="container mx-auto px-3">
- <div class="flex flex-row gap-[30px] mb-[100px]">
-  <div class="pt-[150px] flex-1">
-    <h3 class="font-open text-[28px] leading-[38px] text-[#222222] mb-9 font-semibold">No more confusion and complex to manage your office.</h3>
-    <p class="text-[#51595b] font-oswald text-base leading-8">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<div class="container mx-auto px-3" id="about">
+  <div class="flex flex-row gap-[30px] mb-[100px] items-center">
+    <div class="flex-1">
+      <h3
+        class="font-open text-[28px] leading-[38px] text-[#222222] mb-9 font-semibold"
+      >
+        {{ "about.mainTitle" | translate }}
+      </h3>
+      <p class="text-[#51595b] font-oswald text-base leading-8">
+        {{ "about.text" | translate }}
+      </p>
+    </div>
+    <div class="flex-basis w-[570px] h-[557px]">
+      <img
+        src="./assets/images/about.png"
+        alt="about"
+        class="w-full h-full object-contain"
+      />
+    </div>
   </div>
-  <div class="flex-basis w-[570px] h-[557px]">
-    <img src="./assets/images/about.png" alt="about" class="w-full h-full object-contain">
-  </div>
- </div>
 
- <div>
-  <nz-timeline [nzMode]="'custom'">
-    @for(story of stories; track $index; let odd = $odd) {
-      <nz-timeline-item [nzLabel]="label" [nzPosition]="odd ? 'left' : 'right'"><span class="font-oswald font-medium text-3xl">{{story.text}}</span></nz-timeline-item>
+  <div>
+    <nz-timeline [nzMode]="'custom'">
+      @for(story of stories; track $index; let odd = $odd) {
+      <nz-timeline-item [nzLabel]="label" [nzPosition]="odd ? 'left' : 'right'"
+        ><span class="font-oswald font-medium text-3xl">{{
+          story.text | translate
+        }}</span></nz-timeline-item
+      >
       <ng-template #label>
-        <span class="font-open font-bold text-2xl text-[#009bde]">{{story.label}}</span>
+        <span class="font-open font-bold text-2xl text-[#009bde]">{{
+          story.label
+        }}</span>
       </ng-template>
-    }
-  </nz-timeline>
- </div>
+      }
+    </nz-timeline>
+  </div>
 </div>

@@ -1,5 +1,6 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CarouselModule } from 'ngx-carousel-ease';
 
 @Component({
@@ -7,7 +8,7 @@ import { CarouselModule } from 'ngx-carousel-ease';
   templateUrl: './partners.component.html',
   styleUrls: ['./partners.component.css'],
   standalone: true,
-  imports: [CarouselModule, NgFor]
+  imports: [CarouselModule, NgFor, TranslateModule]
 })
 export class PartnersComponent implements OnInit {
 
