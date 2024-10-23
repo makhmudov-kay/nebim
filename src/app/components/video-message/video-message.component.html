@@ -1,0 +1,17 @@
+<div class="video-message h-[432px]">
+  <button class="video-message__btn" (click)="openVideo()">
+    <span nz-icon nzType="play-circle" nzTheme="fill"></span>
+  </button>
+</div>
+
+@if (isVisible) {
+<div class="modal">
+  <div class="modal-video">
+    <video src="./assets/video/video.mp4" controls></video>
+  </div>
+  <button class="modal-close" (click)="closeVideo()">
+    <span nz-icon nzType="close-circle" nzTheme="fill"></span>
+  </button>
+</div>
+
+}

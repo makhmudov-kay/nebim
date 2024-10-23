@@ -8,6 +8,9 @@ import { PartnersComponent } from './components/partners/partners.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { MetalFactoryComponent } from './components/metal-factory/metal-factory.component';
 import { FormToSendComponent } from './components/form-to-send/form-to-send.component';
+import { SoftwareCustomisableComponent } from './components/software-customisable/software-customisable.component';
+import { VideoMessageComponent } from './components/video-message/video-message.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -21,9 +24,17 @@ import { FormToSendComponent } from './components/form-to-send/form-to-send.comp
     PartnersComponent,
     SolutionsComponent,
     MetalFactoryComponent,
-    FormToSendComponent
+    FormToSendComponent,
+    SoftwareCustomisableComponent,
+    VideoMessageComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less',
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['uzb', 'ru']);
+    this.translate.setDefaultLang('uzb');
+    this.translate.use('uzb');
+  }
+}
