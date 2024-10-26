@@ -11,6 +11,9 @@ import { FormToSendComponent } from './components/form-to-send/form-to-send.comp
 import { SoftwareCustomisableComponent } from './components/software-customisable/software-customisable.component';
 import { VideoMessageComponent } from './components/video-message/video-message.component';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from './services/language.service';
+import { Settings } from './helpers/settings';
+import { Constants } from './configs/constants';
 
 @Component({
   selector: 'app-root',
@@ -32,9 +35,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.less',
 })
 export class AppComponent {
-  constructor(private translate: TranslateService) {
-    this.translate.addLangs(['uzb', 'ru']);
-    this.translate.setDefaultLang('uzb');
-    this.translate.use('uzb');
+  constructor(private translate: TranslateService, settings: Settings,) {
+    this.translate.setDefaultLang(Constants.DEFAULT_LANGUAGE);
+    this.translate.use(settings.language);
   }
 }

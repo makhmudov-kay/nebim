@@ -1,16 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { Lang, LanguageService } from '../../services/language.service';
+import { TranslateModule } from '@ngx-translate/core';
+
+export interface LanguageList {
+  label: Lang
+}
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  standalone: true
+  standalone: true,
+  imports: [NzDropDownModule, TranslateModule]
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor() { }
+  readonly LANGUAGES: LanguageList[] = [
+    { label: 'ru' },
+    { label: 'uz' },
+  ]
 
-  ngOnInit() {
+  get currentLanguage() {
+    return this.lang$.currentLanguage;
   }
+  constructor(private lang$: LanguageService) { }
 
+  setLanguage(lang: Lang) {
+    this.lang$.setCurrentLanguage(lang);
+  }
 }
