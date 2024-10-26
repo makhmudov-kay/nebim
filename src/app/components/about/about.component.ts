@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
+import { WINDOW } from '../../configs/window.token';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,9 @@ import { NzTimelineModule } from 'ng-zorro-antd/timeline';
   standalone: true,
   imports: [NzTimelineModule, TranslateModule],
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  leftPosition = false;
+
   stories = [
     {
       label: '1966',
@@ -28,4 +31,19 @@ export class AboutComponent {
     { label: '2000', text: 'about.history-6' },
     { label: '2011', text: 'about.history-7' },
   ];
+
+  constructor(@Inject(WINDOW) private window: Window) {}
+
+  ngOnInit(): void {
+    this.window.innerWidth < 768
+      ? (this.leftPosition = true)
+      : (this.leftPosition = false);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(e: any) {
+    e.target.innerWidth < 768
+      ? (this.leftPosition = true)
+      : (this.leftPosition = false);
+  }
 }

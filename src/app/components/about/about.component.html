@@ -1,16 +1,20 @@
-<div class="container mx-auto px-3" id="about">
-  <div class="flex flex-row gap-[30px] mb-[100px] items-center">
+<div
+  class="container mx-auto px-3"
+  id="about"
+  (window:resize)="onResize($event)"
+>
+  <div class="flex lg:flex-row flex-col gap-[30px] mb-[100px] items-center">
     <div class="flex-1">
       <h3
-        class="font-open text-[28px] leading-[38px] text-[#222222] mb-9 font-semibold"
+        class="font-open md:text-[28px] text-xl leading-[38px] text-[#222222] md:mb-9 mb-5 font-semibold"
       >
         {{ "about.mainTitle" | translate }}
       </h3>
-      <p class="text-[#51595b] font-oswald text-base leading-8">
+      <p class="text-[#51595b] font-oswald md:text-base text-sm leading-8">
         {{ "about.text" | translate }}
       </p>
     </div>
-    <div class="flex-basis w-[570px] h-[557px]">
+    <div class="flex-basis md:w-[570px] md:h-[557px] w-max-[400px] h-[400px]">
       <img
         src="./assets/images/about.png"
         alt="about"
@@ -22,7 +26,9 @@
   <div>
     <nz-timeline [nzMode]="'custom'">
       @for(story of stories; track $index; let odd = $odd) {
-      <nz-timeline-item [nzLabel]="label" [nzPosition]="odd ? 'left' : 'right'"
+      <nz-timeline-item
+        [nzLabel]="label"
+        [nzPosition]="leftPosition ? 'left' : odd ? 'left' : 'right'"
         ><span class="font-oswald font-medium text-3xl">{{
           story.text | translate
         }}</span></nz-timeline-item

@@ -1,11 +1,13 @@
 <div class="bg-white shadow-bottom fixed top-0 left-0 w-full z-30">
-  <div class="container flex flex-row items-center justify-between py-6 px-3 m-auto ">
-    <div>
-      <img src="./assets/images/logo.png" alt="logo">
+  <div
+    class="container flex flex-row items-center justify-between py-4 lg:py-6 px-3 m-auto"
+  >
+    <div class="my-img">
+      <img src="./assets/images/logo.png" alt="logo" />
     </div>
 
     <div class="flex flex-row items-center gap-6">
-      <ul class="flex flex-row items-center gap-6 font-open">
+      <ul class="flex flex-row items-center gap-6 font-open my-menu">
         <li><a href="#banner" class="uppercase">Home</a></li>
         <li><a href="#features" class="uppercase">Features</a></li>
         <li><a href="#about" class="uppercase">About</a></li>
@@ -15,17 +17,107 @@
         <li><a href="#contacts" class="uppercase">Contacts</a></li>
       </ul>
 
-      <a nz-dropdown [nzDropdownMenu]="menu">
-        {{currentLanguage | translate}}
+      <a
+        nz-dropdown
+        [nzDropdownMenu]="menu"
+        class="flex flex-row items-center gap-2"
+      >
+        @switch (currentLanguage) { @case ('uz') {
+        <svg-uzb-flag></svg-uzb-flag>
+        } @case ('ru') {
+        <svg-ru-flag></svg-ru-flag>
+        } }{{ currentLanguage | translate }}
         <span nz-icon nzType="down"></span>
       </a>
-      <nz-dropdown-menu #menu="nzDropdownMenu">
-        <ul nz-menu nzSelectable>
-          @for (lang of LANGUAGES; track $index) {
-          <li nz-menu-item (click)="setLanguage(lang.label)" class="uppercase">{{lang.label | translate}}</li>
-          }
-        </ul>
-      </nz-dropdown-menu>
+
+      <a (click)="visible = true" class="block lg:hidden">
+        <span nz-icon nzType="menu" nzTheme="outline"></span>
+      </a>
     </div>
   </div>
 </div>
+
+<nz-drawer
+  [nzClosable]="false"
+  [nzVisible]="visible"
+  [nzTitle]="title"
+  (nzOnClose)="close()"
+>
+  <ng-container *nzDrawerContent>
+    <div class="flex flex-col items-center gap-6">
+      <ul class="flex flex-col items-center gap-6 font-open">
+        <li><a href="#banner" class="uppercase" (click)="close()">Home</a></li>
+        <li>
+          <a href="#features" class="uppercase" (click)="close()">Features</a>
+        </li>
+        <li><a href="#about" class="uppercase" (click)="close()">About</a></li>
+        <li>
+          <a href="#products" class="uppercase" (click)="close()">Products</a>
+        </li>
+        <li>
+          <a href="#partners" class="uppercase" (click)="close()">Partners</a>
+        </li>
+        <li><a href="#metal" class="uppercase" (click)="close()">Metal</a></li>
+        <li>
+          <a href="#contacts" class="uppercase" (click)="close()">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+
+  <ng-template #title>
+    <div class="flex flex-row items-center gap-2 justify-between">
+      <span nz-icon nzType="close" nzTheme="outline"></span>
+      <a
+        nz-dropdown
+        [nzDropdownMenu]="menuDrawer"
+        class="flex flex-row items-center gap-2"
+      >
+        @switch (currentLanguage) { @case ('uz') {
+        <svg-uzb-flag></svg-uzb-flag>
+        } @case ('ru') {
+        <svg-ru-flag></svg-ru-flag>
+        } }{{ currentLanguage | translate }}
+        <span nz-icon nzType="down"></span>
+      </a>
+    </div>
+  </ng-template>
+</nz-drawer>
+
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu nzSelectable>
+    @for (lang of LANGUAGES; track $index) {
+    <li
+      nz-menu-item
+      (click)="setLanguage(lang.label)"
+      class="uppercase flex flex-row items-center gap-2"
+    >
+      @switch (lang.label) { @case ('uz') {
+      <svg-uzb-flag></svg-uzb-flag>
+      } @case ('ru') {
+      <svg-ru-flag></svg-ru-flag>
+      } }
+      <span>{{ lang.label | translate }}</span>
+    </li>
+    }
+  </ul>
+</nz-dropdown-menu>
+
+<nz-dropdown-menu #menuDrawer="nzDropdownMenu">
+  <ul nz-menu nzSelectable>
+    @for (lang of LANGUAGES; track $index) {
+    <li
+      nz-menu-item
+      (click)="setLanguage(lang.label)"
+      class="uppercase flex flex-row items-center gap-2"
+    >
+      @switch (lang.label) { @case ('uz') {
+      <svg-uzb-flag></svg-uzb-flag>
+      } @case ('ru') {
+      <svg-ru-flag></svg-ru-flag>
+      } }
+      <span>{{ lang.label | translate }}</span>
+    </li>
+    }
+  </ul>
+</nz-dropdown-menu>

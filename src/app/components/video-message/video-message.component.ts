@@ -4,7 +4,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 @Component({
   selector: 'app-video-message',
   templateUrl: './video-message.component.html',
-  styleUrls: ['./video-message.component.css'],
+  styleUrls: ['./video-message.component.less'],
   standalone: true,
   imports: [NzIconModule],
 })
