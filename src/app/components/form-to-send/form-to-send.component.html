@@ -1,13 +1,13 @@
 <div class="form" id="contacts">
-  <div class="container mx-auto px-3 py-[100px]">
+  <div class="container mx-auto px-3 md:py-[100px] py-[30px]">
     <h3
       class="font-open text-[28px] leading-[38px] text-[#fff] mb-9 font-semibold uppercase"
     >
       {{ "contacts.title" | translate }}
     </h3>
 
-    <form nz-form nzLayout="vertical">
-      <div class="grid grid-cols-2 gap-6">
+    <form nz-form nzLayout="vertical" [formGroup]="form">
+      <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6">
         <nz-form-item>
           <nz-form-label nzFor="email"
             ><span class="text-white">{{
@@ -17,9 +17,10 @@
           <nz-form-control>
             <input
               nz-input
-              name="email"
-              type="email"
-              id="email"
+              name="phone"
+              type="text"
+              id="phone"
+              formControlName="phone"
               nzSize="large"
             />
           </nz-form-control>
@@ -34,9 +35,10 @@
           <nz-form-control>
             <input
               nz-input
-              name="email"
-              type="email"
-              id="email"
+              name="fullName"
+              type="text"
+              id="fullName"
+              formControlName="fullName"
               nzSize="large"
             />
           </nz-form-control>
@@ -53,6 +55,7 @@
           <nz-form-control>
             <textarea
               nz-input
+              formControlName="message"
               nzSize="large"
               [nzAutosize]="{ minRows: 4, maxRows: 6 }"
             ></textarea>
@@ -64,8 +67,25 @@
     <button
       nz-button
       nzType="default"
+      nzShape="round"
+      [nzLoading]="isLoading"
       nzSize="large"
-      class="flex flex-row items-center"
+      (click)="submit()"
+      class="flex-row items-center hidden md:flex"
+    >
+      {{ "contacts.send" | translate }}
+      <span nz-icon nzType="send" nzTheme="outline"></span>
+    </button>
+
+    <button
+      nz-button
+      nzBlock
+      (click)="submit()"
+      nzShape="round"
+      nzType="default"
+      [nzLoading]="isLoading"
+      nzSize="large"
+      class="flex flex-row items-center justify-center md:hidden"
     >
       {{ "contacts.send" | translate }}
       <span nz-icon nzType="send" nzTheme="outline"></span>
