@@ -8,13 +8,41 @@
 
     <div class="flex flex-row items-center gap-6">
       <ul class="flex flex-row items-center gap-6 font-open my-menu">
-        <li><a href="#banner" class="uppercase">Home</a></li>
-        <li><a href="#features" class="uppercase">Features</a></li>
-        <li><a href="#about" class="uppercase">About</a></li>
-        <li><a href="#products" class="uppercase">Products</a></li>
-        <li><a href="#partners" class="uppercase">Partners</a></li>
-        <li><a href="#metal" class="uppercase">Metal</a></li>
-        <li><a href="#contacts" class="uppercase">Contacts</a></li>
+        <li>
+          <a href="#banner" class="uppercase" (click)="close()">{{
+            "menuLinks.home" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#features" class="uppercase" (click)="close()">{{
+            "menuLinks.feature" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#about" class="uppercase" (click)="close()">{{
+            "menuLinks.about" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#products" class="uppercase" (click)="close()">{{
+            "menuLinks.products" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#partners" class="uppercase" (click)="close()">{{
+            "menuLinks.partners" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#metal" class="uppercase" (click)="close()">{{
+            "menuLinks.erp" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#contacts" class="uppercase" (click)="close()">{{
+            "menuLinks.contact_us" | translate
+          }}</a>
+        </li>
       </ul>
 
       <a
@@ -46,20 +74,40 @@
   <ng-container *nzDrawerContent>
     <div class="flex flex-col items-center gap-6">
       <ul class="flex flex-col items-center gap-6 font-open">
-        <li><a href="#banner" class="uppercase" (click)="close()">Home</a></li>
         <li>
-          <a href="#features" class="uppercase" (click)="close()">Features</a>
-        </li>
-        <li><a href="#about" class="uppercase" (click)="close()">About</a></li>
-        <li>
-          <a href="#products" class="uppercase" (click)="close()">Products</a>
+          <a href="#banner" class="uppercase" (click)="close()">{{
+            "menuLinks.home" | translate
+          }}</a>
         </li>
         <li>
-          <a href="#partners" class="uppercase" (click)="close()">Partners</a>
+          <a href="#features" class="uppercase" (click)="close()">{{
+            "menuLinks.feature" | translate
+          }}</a>
         </li>
-        <li><a href="#metal" class="uppercase" (click)="close()">Metal</a></li>
         <li>
-          <a href="#contacts" class="uppercase" (click)="close()">Contacts</a>
+          <a href="#about" class="uppercase" (click)="close()">{{
+            "menuLinks.about" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#products" class="uppercase" (click)="close()">{{
+            "menuLinks.products" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#partners" class="uppercase" (click)="close()">{{
+            "menuLinks.partners" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#metal" class="uppercase" (click)="close()">{{
+            "menuLinks.erp" | translate
+          }}</a>
+        </li>
+        <li>
+          <a href="#contacts" class="uppercase" (click)="close()">{{
+            "menuLinks.contact_us" | translate
+          }}</a>
         </li>
       </ul>
     </div>

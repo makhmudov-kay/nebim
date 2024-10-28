@@ -1,17 +1,20 @@
 <div class="container mx-auto py-[100px] px-3" id="products">
   <div class="flex md:flex-row flex-col gap-[80px] items-center">
-    <div class="size-[400px] relative flex-basis-1 w-[400px]">
-      <div class="main-circle" (click)="currentIndex = -1"></div>
-      @for (pieace of pieChartPieaces; track pieace; let idx = $index) {
-      <a
-        [id]="pieace.id"
-        class="uygulamalar"
-        [ngClass]="{ active: idx === currentIndex }"
-        (click)="currentIndex = idx"
-      >
-        <img [src]="'./assets/images/' + pieace.img" />
-      </a>
-      }
+    <div class="flex-basis-1 w-[400px]">
+      <p class="mb-4 text-xs text-center">{{ "products.text" | translate }}</p>
+      <div class="size-[400px] relative">
+        <div class="main-circle" (click)="currentIndex = -1"></div>
+        @for (pieace of pieChartPieaces; track pieace; let idx = $index) {
+        <a
+          [id]="pieace.id"
+          class="uygulamalar"
+          [ngClass]="{ active: idx === currentIndex }"
+          (click)="currentIndex = idx"
+        >
+          <img [src]="'./assets/images/' + pieace.img" />
+        </a>
+        }
+      </div>
     </div>
 
     <div class="grow flex-1">

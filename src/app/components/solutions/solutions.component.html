@@ -6,7 +6,9 @@
     <span class="text-[#009bde]">{{ "solution.mainSub" | translate }}</span>
   </h3>
 
-  <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 xl:gap-[50px] md:gap-[35px] gap-[20px]">
+  <div
+    class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 xl:gap-[50px] md:gap-[35px] gap-[20px]"
+  >
     @for (item of solutions; track $index) {
     <div class="flex flex-row gap-5">
       <div class="md:size-[56px] size-[40px] flex-basis">
@@ -20,7 +22,13 @@
         <h3 class="md:text-base text-sm font-open uppercase font-semibold">
           {{ item.title | translate }}
         </h3>
-        <p class="md:text-sm text-xs font-open font-light text-[#51595b] leading-6">
+        <p
+          class="md:text-sm text-xs font-open font-light text-[#51595b] leading-6"
+          nz-typography
+          nzEllipsis
+          nzExpandable
+          [nzEllipsisRows]="3"
+        >
           {{ item.text | translate }}
         </p>
       </div>

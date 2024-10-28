@@ -1,4 +1,9 @@
 {
+  "banner": {
+    "title": "Barcha jarayonlar bitta tizimda",
+    "text": "Chakana, Ulgurji savdosi va ishlab chiqarish jarayonlarini yagona tizimda boshqaring va ko'p kesimli hisobotlarga ega bo'ling",
+    "subTitle": "лучшее программное обеспечение для вашего бизнеса"
+  },
   "solution": {
     "main": "Возможность отслеживать все процессы для оптовых торговцев и производителей через одну программу",
     "mainSub": "Осуществляйте это через Nebim ERP.",
@@ -31,6 +36,7 @@
     "subTitle": "не нужно ничего знать!"
   },
   "products": {
+    "text": "Пожалуйста, выберите одну из секций, чтобы получить информацию о Nebim V3.",
     "table": {
       "title-1": "Компании",
       "title-2": "Пользователи бек-офиса",
@@ -129,7 +135,7 @@
     "title": "Наши партнеры"
   },
   "metal": {
-    "title": "LOREM IPSUM",
+    "title": "ERP для производства металлопродукции и металлоконструкций",
     "text-1": "Отслеживание доходов и расходов",
     "text-2": "Отслеживание бирж",
     "text-3": "Отслеживание производства",
@@ -146,8 +152,18 @@
   },
   "footer": {
     "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptatum cum numquam.",
-    "copyRight": "Все права защищены. Все услуги лицензированы."
+    "copyRight": "Все права защищены. Все услуги лицензированы.",
+    "contacts": "Контакты"
   },
   "ru": "РУ",
-  "uz": "УЗБ"
+  "uz": "УЗБ",
+  "menuLinks": {
+    "home": "Главная",
+    "feature": "Возможности",
+    "about": "О нас",
+    "products": "Деятельность",
+    "partners": "Наши партнеры",
+    "erp": "ERP",
+    "contact_us": "Связаться"
+  }
 }

@@ -6,7 +6,7 @@ import { WINDOW } from '../../configs/window.token';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+  styleUrls: ['./about.component.less'],
   standalone: true,
   imports: [NzTimelineModule, TranslateModule],
 })

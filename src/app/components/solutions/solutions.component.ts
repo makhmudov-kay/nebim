@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
 
 @Component({
   selector: 'app-solutions',
   templateUrl: './solutions.component.html',
   styleUrls: ['./solutions.component.css'],
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, NzTypographyModule],
 })
 export class SolutionsComponent {
   solutions = [

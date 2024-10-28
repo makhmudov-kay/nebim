@@ -1,23 +1,65 @@
-<div class="footer bg-[#fafafa] xl:p-14 md:p-7 p-4">
+<div class="footer bg-[#fafafa] xl:p-14 p-7">
   <div class="container mx-auto">
-    <div class="flex flex-col items-center gap-8">
-      <div>
-        <img src="./assets/images/logo.png" alt="logo" />
+    <div
+      class="flex flex-col md:flex-row gap-8 md:justify-between md:items-start items-center"
+    >
+      <div class="flex flex-col gap-8 order-1">
+        <div class="flex justify-center md:justify-start">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <p
+          class="max-w-[400px] w-full text-lg font-open md:text-start text-center"
+        >
+          {{ "footer.text" | translate }}
+        </p>
+        <span class="text-xs font-oswald md:text-start text-center">
+          2022–{{ year }} © {{ "footer.copyRight" | translate }}
+        </span>
       </div>
 
-      <p class="max-w-[400px] w-full text-center text-lg font-open">
-        {{ "footer.text" | translate }}
-      </p>
-
-      <div class="flex flex-row items-center gap-3 justify-center">
-        <a href=""><span nz-icon nzType="instagram" nzTheme="fill"></span></a>
-        <a href=""><span nz-icon nzType="youtube" nzTheme="fill"></span></a>
-        <a href=""><span nz-icon nzType="facebook" nzTheme="fill"></span></a>
+      <div class="flex flex-col gap-5 md:order-2 order-3">
+        <h4 class="font-open text-[#00A5DB] text-2xl font-bold uppercase">
+          {{ "footer.contacts" | translate }}
+        </h4>
+        <ul class="flex flex-col gap-2">
+          <li class="font-open text-base">
+            <span>{{ "contacts.phone" | translate }}: </span>
+            <a href="tel:998777375075">+998777375075</a>
+          </li>
+          <li class="font-open text-base">
+            <span class="opacity-0">{{ "contacts.phone" | translate }}: </span>
+            <a href="tel:998951655075">+998951655075</a>
+          </li>
+        </ul>
+        <div class="flex flex-row items-center gap-3">
+          <a href="https://www.instagram.com/nebim.uz/" target="_blank"
+            ><span nz-icon nzType="instagram" nzTheme="fill"></span
+          ></a>
+          <a href="https://t.me/nebimuz" target="_blank"
+            ><span nz-icon nzType="icon:tg"></span
+          ></a>
+          <a href="https://www.facebook.com/nebimuz" target="_blank"
+            ><span nz-icon nzType="facebook" nzTheme="fill"></span
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/nebim-uzbekistan/"
+            target="_blank"
+            ><span nz-icon nzType="linkedin" nzTheme="fill"></span
+          ></a>
+        </div>
       </div>
 
-      <span class="text-xs font-oswald">
-        2022–{{ year }} © {{ "footer.copyRight" | translate }}
-      </span>
+      <div class="md:order-3 order-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5991.945583698574!2d69.251606!3d41.331205!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE5JzUyLjMiTiA2OcKwMTUnMDUuOCJF!5e0!3m2!1sru!2s!4v1730137225352!5m2!1sru!2s"
+          width="400"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </div>
 </div>

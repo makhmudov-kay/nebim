@@ -1,4 +1,9 @@
 {
+  "banner": {
+    "title": "Barcha jarayonlar bitta tizimda",
+    "text": "Chakana, Ulgurji savdosi va ishlab chiqarish jarayonlarini yagona tizimda boshqaring va ko'p kesimli hisobotlarga ega bo'ling",
+    "subTitle": "biznesingiz uchun eng yaxshi dasturiy ta'minot"
+  },
   "solution": {
     "main": "Chakana, ulgurji savdo bilan shug’ullanuvchilar va ishlab chiqaruvchilar uchun barcha jarayonlarni bitta dastur orqali kuzatib boorish imkoniyati",
     "mainSub": "Nebim ERP orqali amalga oshiring.",
@@ -31,6 +36,7 @@
     "subTitle": "hech narsani bilish shart emas!"
   },
   "products": {
+    "text": "Iltimos, Nebim V3 haqida ma'lumot olish uchun bo'limi birini tanlang.",
     "table": {
       "title-1": "Kompaniyalar",
       "title-2": "Orqa Ofis Foydalanuvchilari",
@@ -129,7 +135,7 @@
     "title": "Bizning hamkorlarimiz"
   },
   "metal": {
-    "title": "LOREM IPSUM",
+    "title": "Metal buyumlar va metaldan konstruksiyalar ishlab chiqarish uchun ERP",
     "text-1": "Daromad va xarajatlarni kuzatish",
     "text-2": "Birjani kuzatish",
     "text-3": "Ishlab chiqarishni kuzatish",
@@ -146,8 +152,18 @@
   },
   "footer": {
     "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptatum cum numquam.",
-    "copyRight": "Barcha huquqlar himoyalangan. Barcha xizmatlar litsenziyalangan"
+    "copyRight": "Barcha huquqlar himoyalangan. Barcha xizmatlar litsenziyalangan",
+    "contacts": "Kontaktlar"
   },
   "ru": "RU",
-  "uz": "O'ZB"
+  "uz": "O'ZB",
+  "menuLinks": {
+    "home": "Asosiy",
+    "feature": "Imkoniyatlar",
+    "about": "Biz haqimizda",
+    "products": "Faoliyat",
+    "partners": "Hamkorlarimiz",
+    "erp": "ERP",
+    "contact_us": "Bog'lanish"
+  }
 }
