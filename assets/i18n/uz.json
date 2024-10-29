@@ -1,0 +1,169 @@
+{
+  "banner": {
+    "title": "Barcha jarayonlar bitta tizimda",
+    "text": "Chakana, Ulgurji savdosi va ishlab chiqarish jarayonlarini yagona tizimda boshqaring va ko'p kesimli hisobotlarga ega bo'ling",
+    "subTitle": "biznesingiz uchun eng yaxshi dasturiy ta'minot"
+  },
+  "solution": {
+    "main": "Chakana, ulgurji savdo bilan shug’ullanuvchilar va ishlab chiqaruvchilar uchun barcha jarayonlarni bitta dastur orqali kuzatib boorish imkoniyati",
+    "mainSub": "Nebim ERP orqali amalga oshiring.",
+    "title-1": "Ma’lumotlar havfsizligi va tezlik",
+    "title-2": "Moliyaviy va buxgalteriya hisobotlari",
+    "title-3": "Mahsulot sotuvi va holatini baholash",
+    "title-4": "CRM",
+    "title-5": "Ishlab chiqarish",
+    "title-6": "Hodimlarni samarali boshqarish",
+    "text-1": "Har bir kompaniya uchun databaza va server qurish orqali ma’lumotlar almashish tezligi sezilarli darajada oshiriladi",
+    "text-2": "Naqd pul oqimlari, bank hisob raqamlari to’g’risida hiosbotlar, mijozlar va ta’minotchilar bilan hisob kitoblarni naqd, bank, to’lov kartalar orqali to’langanligini va holatini kuzatib borish.",
+    "text-3": "Sotish, inventarizatsiya, yalpi marja, markirovka, inventar aylanish tezligi va sotish darajasiga oid haftalik yoki oylik tendentsiyalarni tahlil qilish orqali mahsulotingizning ishlashini baholash va  kategoriyalar asosida mahsulot samaradorligini tahlil qilish mumkin.",
+    "text-4": "Mijozlar oqimi, xaridlar, to’lovlarni mijozlarni segmentlash orqali tahlil qilish va kunlik, haftalik, oylik va yillik vaqt oralig’ida hisobot olish va mos davrga nisbatan solishtirish mumkin.",
+    "text-5": "Dastlabki xarajatlar va materiallar ro`yxati, mijoz buyurtmalarini boshqarish, namuna/model monitoring, ish tartibi jarayoni monitoring, ishlab chiqarishni rejalashtirish, xarid qilish va xom ashyoni boshqarish, materiallarga talablarni rejalashtirish MRP, xom ashyo sifatini nazorat qilish, shtrixli kodga asoslangan jarayonni kuzatish, operatsion samaradorlik, tovar sifatini nazorat qilish, shtrixli posilkalarni kuzatish va yuklash, xarajatlarni boshqarish, xarajatlarga asoslangan hisob, talablarni rejalashtirish, mahsulot/xom ashyo sifatini nazorat qilish imkoniyati.",
+    "text-6": "Hodimlarni rag’batlantirish, sotuvlarini kuzatib borish, bonuslar, ish vaqtlari, ta’tillarni rejalashtirish mumkin."
+  },
+  "about": {
+    "mainTitle": "Nebim sifatida, biz Turkiyadagi eng barqaror mustaqil dasturiy ta'minot ishlab chiqaruvchilaridan biri hisoblanamiz.",
+    "text": "Biz chakana, ulgurji va ishlab chiqarish sanoatlari uchun optimallashtirilgan ERP (Korxona Resurslarini Rejalashtirish) va do'kon dasturlarini ishlab chiqamiz. Bizning tajribamiz 1966 yildan boshlangan bo'lib, biz ayniqsa tayyor kiyim, kiyim-kechak, poyabzal, katta do'konlar, uy matolari, gilamlar, mebel, shisha buyumlar, optika, kosmetika, aksessuarlar va boshqa chakana sanoatlari bo'yicha mutaxassislarimiz. Biz ishlab chiqqan dastur hozirda 30+ mamlakatda, 22 tilda, 80+ brendda va 1,000+ do'konda foydalanilmoqda.",
+    "history-1": "Neyir Örme Sanayii (matolarni ishlab chiqarish korxonasi) doirasida tashqi xizmatlar",
+    "history-2": "Mustaqil korporatsiya sifatida asossolingan",
+    "history-3": "Turkiyadagi Texas Instrumentsning distribyutori, UNIX+COBOLga asoslangan dasturiy ta'minot (1 chi avlod )",
+    "history-4": "Ta'minot kanalini o'rnatdi",
+    "history-5": "Paketli dasturiy ta'minot (Microsoft texnologiya stagi)",
+    "history-6": "Nebim Winner (2 chi avlod) ishga tushirildi",
+    "history-7": "Nebim V3 ERP(3 chi avlod) ishga tushirildi"
+  },
+  "software": {
+    "title": "Bizning dasturimiz butunlay sozlanishi va ulardan foydalanish oson,",
+    "subTitle": "hech narsani bilish shart emas!"
+  },
+  "products": {
+    "text": "Iltimos, Nebim V3 haqida ma'lumot olish uchun bo'limi birini tanlang.",
+    "table": {
+      "title-1": "Kompaniyalar",
+      "title-2": "Orqa Ofis Foydalanuvchilari",
+      "title-3": "Do'konlar",
+      "title-4": "Do'kon Foydalanuvchilari",
+      "title-5": "Yechim Hamkorlari",
+      "title-6": "Mamlakatlar"
+    },
+    "list": {
+      "block-1": {
+        "title": "Moliyaviy / Hisob",
+        "text-1": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-2": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-3": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-4": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-5": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-6": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-7": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-8": "Mijoz va Ta’minotchilarBoshqaruvi",
+        "text-9": "Mijoz va Ta’minotchilarBoshqaruvi"
+      },
+      "block-2": {
+        "title": "Mahsulot Boshqaruvi",
+        "text-1": "Tovar Rejalashtirish",
+        "text-2": "BOM Sotuvlar Konfiguratsiyasi",
+        "text-3": "Raqamli Kanallar uchun Inventarizatsiya Boshqaruvi",
+        "text-4": "Ko'zoynak Mahsulotlarini Boshqarish va Sog'liqni Saqlash Vazirligi (ÜTS) mahsulot monitoring tizimi",
+        "text-5": "KategoriyaBoshqaruvi va MahsulotXususiyatlari",
+        "text-6": "MahsulotTa’minoti, Tugatish va O’tkazish",
+        "text-7": "Mahsulot Tahlillari"
+      },
+      "block-3": {
+        "title": "Xarid qilish",
+        "text-1": "Xarid Jarayonini Boshqarish, ASN",
+        "text-2": "Takliflar",
+        "text-3": "Import",
+        "text-4": "KMaterial/XomAshyo Boshqaruvi",
+        "text-5": "XaridSo'roviniBoshqarish",
+        "text-6": "Konsignatsiya Xaridlari",
+        "text-7": "Narx Boshqaruvi"
+      },
+      "block-4": {
+        "title": "Ishlab Chiqarish",
+        "text-1": "Ishlab Chiqarish Rejalashtirish",
+        "text-2": "Namuna/Model Monitoring",
+        "text-3": "Operativ Mahsuldorlik",
+        "text-4": "Ish Buyurtmasi Jarayonini Monitoring",
+        "text-5": "Ehtiyojlarni Rejalashtirish",
+        "text-6": "Mahsulot/Xom Ashyo Sifat Nazorati"
+      },
+      "block-5": {
+        "title": "Ombor Boshqaruvi",
+        "text-1": "Ko'p Ombor Inventarizatsiya Boshqaruvi",
+        "text-2": "Ombor Polka Inventarizatsiya Boshqaruvi",
+        "text-3": "Mahsulot Kombinatsiyalari (To'plamlar-Paketlar) va Ajratish",
+        "text-4": "Ombor Jarayonlarini Boshqarish",
+        "text-5": "Zaxira va Zaxira Farqi Sinxronizatsiyasi",
+        "text-6": "Logistika va Yuk Tashish Kompaniyalari bilan Integratsiya",
+        "text-7": "Mobil Ombor Ilovalari"
+      },
+      "block-6": {
+        "title": "Savdo",
+        "text-1": "Ko'p Kanalli Savdo Boshqaruvi",
+        "text-2": "Narx Pasaytirish Kampaniyasi Boshqaruvi",
+        "text-3": "E-Dispatch Nomi",
+        "text-4": "Yangi Avlod Naqd Pul Qabul Qilish Usullari",
+        "text-5": "Ko'zoynak Buyurtmalari Va Savdosi",
+        "text-6": "Bepul Savdo Do'konlarini Boshqarish",
+        "text-7": "Narx Boshqaruvi",
+        "text-8": "Nebim V3 POS va Orqa Ofis",
+        "text-9": "Bo'lib Sotish va Keyingi Yetkazib Berish (Buyurtmalar)"
+      },
+      "block-7": {
+        "title": "CRM",
+        "text-1": "Mijoz Ma'lumotlarining Sifatini Yaxshilashva Deduplikatsiya",
+        "text-2": "Omnichannel Mijoz Sodiqlik Boshqaruvi",
+        "text-3": "Shaxsiy Ma'lumotlarni Himoya Qilish Bo'yicha Qonun Talablari",
+        "text-4": "Mijoz Tahlillari Va Segmentatsiyasi",
+        "text-5": "Guruh E-pochta Yuborish",
+        "text-6": "Tashqi Sodiqlik Boshqaruv Tizimlari Bilan Integratsiya(Como, Hopi, Paro, Zubizu)"
+      },
+      "block-8": {
+        "title": "HR / Xodimlar",
+        "text-1": "Ishga Qabul Arizalari va Suhbatlar",
+        "text-2": "Ish O’qitish va Sinovlar",
+        "text-3": "Taqdirlash To’lovlari",
+        "text-4": "Xodimlar Uchun Maosh Rejalashtirish",
+        "text-5": "Xodimlar Uchun Maosh Hisoblash",
+        "text-6": "Doimiy Ishchi Kuch",
+        "text-7": "Xodimlar uchun Ta",
+        "text-8": "O'z-o'ziga xizmat ko'rsatish HR"
+      }
+    }
+  },
+  "partners": {
+    "title": "Bizning hamkorlarimiz"
+  },
+  "metal": {
+    "title": "Metal buyumlar va metaldan konstruksiyalar ishlab chiqarish uchun ERP",
+    "text-1": "Daromad va xarajatlarni kuzatish",
+    "text-2": "Birjani kuzatish",
+    "text-3": "Ishlab chiqarishni kuzatish",
+    "text-4": "To'plamni kuzatish",
+    "text-5": "Chakana savdo kuzatuvi",
+    "text-6": "Hisobotlar"
+  },
+  "contacts": {
+    "title": "Biz bilan bog'lanish",
+    "phone": "Telefon",
+    "fullName": "To'liq ism familiya",
+    "message": "Xabar",
+    "send": "Yuborish"
+  },
+  "footer": {
+    "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum voluptatum cum numquam.",
+    "copyRight": "Barcha huquqlar himoyalangan. Barcha xizmatlar litsenziyalangan",
+    "contacts": "Kontaktlar"
+  },
+  "ru": "RU",
+  "uz": "O'ZB",
+  "menuLinks": {
+    "home": "Asosiy",
+    "feature": "Imkoniyatlar",
+    "about": "Biz haqimizda",
+    "products": "Faoliyat",
+    "partners": "Hamkorlarimiz",
+    "erp": "ERP",
+    "contact_us": "Bog'lanish"
+  }
+}
