@@ -2,7 +2,7 @@
   <div class="flex md:flex-row flex-col gap-[80px] items-center">
     <div class="flex-basis-1 max-w-[400px] w-full">
       <p class="mb-4 text-xs text-center">{{ "products.text" | translate }}</p>
-      <div class="size-[400px] sm:scale-100 scale-75 relative">
+      <div class="size-[400px] sm:scale-100 scale-75 relative sm:translate-x-none max-[435px]:-translate-x-[15px] max-[390px]:-translate-x-[25px]">
         <div class="main-circle" (click)="currentIndex = -1"></div>
         @for (pieace of pieChartPieaces; track pieace; let idx = $index) {
         <a
