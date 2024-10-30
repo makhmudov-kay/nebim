@@ -12,11 +12,7 @@
     @for (item of solutions; track $index) {
     <div class="flex flex-row gap-5">
       <div class="md:size-[56px] size-[40px] flex-basis">
-        <img
-          class="w-full h-full object-contain"
-          src="./assets/images/clock.svg"
-          alt="img"
-        />
+        <img class="w-full h-full object-contain" [src]="item.img" alt="img" />
       </div>
       <div class="flex flex-col gap-4 flex-1">
         <h3 class="md:text-base text-sm font-open uppercase font-semibold">
