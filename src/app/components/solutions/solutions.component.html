@@ -26,8 +26,8 @@
           class="md:text-sm text-xs font-open font-light text-[#51595b] leading-6"
           nz-typography
           nzEllipsis
-          nzExpandable
-          [nzEllipsisRows]="3"
+          [nzEllipsisRows]="5"
+          [attr.title]="item.text | translate"
         >
           {{ item.text | translate }}
         </p>
