@@ -33,9 +33,6 @@ export class OurProductsComponent {
         'products.list.block-1.text-4',
         'products.list.block-1.text-5',
         'products.list.block-1.text-6',
-        'products.list.block-1.text-7',
-        'products.list.block-1.text-8',
-        'products.list.block-1.text-9',
       ],
     },
     {
@@ -91,12 +88,10 @@ export class OurProductsComponent {
         'products.list.block-6.text-1',
         'products.list.block-6.text-2',
         'products.list.block-6.text-3',
-        'products.list.block-6.text-4',
         'products.list.block-6.text-5',
         'products.list.block-6.text-6',
         'products.list.block-6.text-7',
         'products.list.block-6.text-8',
-        'products.list.block-6.text-9',
       ],
     },
     {
@@ -120,7 +115,6 @@ export class OurProductsComponent {
         'products.list.block-8.text-5',
         'products.list.block-8.text-6',
         'products.list.block-8.text-7',
-        'products.list.block-8.text-8',
       ],
     },
   ];
