@@ -14,6 +14,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from './services/language.service';
 import { Settings } from './helpers/settings';
 import { Constants } from './configs/constants';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -35,7 +36,22 @@ import { Constants } from './configs/constants';
   styleUrl: './app.component.less',
 })
 export class AppComponent {
-  constructor(private translate: TranslateService, settings: Settings,) {
+  constructor(
+    private translate: TranslateService,
+    settings: Settings,
+    private meta: Meta,
+    private title: Title
+  ) {
+    this.title.setTitle('Nebim.uz');
+    this.meta.addTags([
+      {
+        name: 'description',
+        content:
+          "Chakana, Ulgurji savdosi va ishlab chiqarish jarayonlarini yagona tizimda boshqaring va ko'p kesimli hisobotlarga ega bo'ling.",
+      },
+      { name: 'keywords', content: 'nebimorg, nebim uz, nebim, nebim.uz, chakana, erp, crm, savdo' },
+      { name: 'author', content: 'Nebim' },
+    ]);
     this.translate.setDefaultLang(Constants.DEFAULT_LANGUAGE);
     this.translate.use(settings.language);
   }
