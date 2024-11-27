@@ -44,12 +44,27 @@ export class AppComponent {
   ) {
     this.title.setTitle('Nebim.uz');
     this.meta.addTags([
+      { name: 'robots', content: 'index, follow' },
+      { name: 'date', content: '2024-11-27', scheme: 'YYYY-MM-DD' },
+      { property: 'og:url', content: 'https://nebimorgm.uz' },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:site_name',
+        content: 'Nebimorgm.uz',
+      },
       {
         name: 'description',
         content:
           "Chakana, Ulgurji savdosi va ishlab chiqarish jarayonlarini yagona tizimda boshqaring va ko'p kesimli hisobotlarga ega bo'ling.",
       },
-      { name: 'keywords', content: 'nebimorg, nebim uz, nebim, nebim.uz, chakana, erp, crm, savdo' },
+      {
+        name: 'keywords',
+        content:
+          'nebimorg, nebim uz, nebim, nebim.uz, chakana, erp, crm, savdo',
+      },
       { name: 'author', content: 'Nebim' },
     ]);
     this.translate.setDefaultLang(Constants.DEFAULT_LANGUAGE);
