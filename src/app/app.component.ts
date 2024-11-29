@@ -44,7 +44,6 @@ export class AppComponent {
   ) {
     this.title.setTitle('Nebim.uz');
     this.meta.addTags([
-      { name: 'robots', content: 'index, follow' },
       { name: 'date', content: '2024-11-27', scheme: 'YYYY-MM-DD' },
       { property: 'og:url', content: 'https://nebimorgm.uz' },
       {
@@ -56,16 +55,11 @@ export class AppComponent {
         content: 'Nebimorgm.uz',
       },
       {
-        name: 'description',
-        content:
-          "Chakana, Ulgurji savdosi va ishlab chiqarish jarayonlarini yagona tizimda boshqaring va ko'p kesimli hisobotlarga ega bo'ling.",
-      },
-      {
         name: 'keywords',
         content:
-          'nebimorg, nebim uz, nebim, nebim.uz, chakana, erp, crm, savdo',
+          'nebimorg, nebimorgm, nebim uz, nebim, nebim.uz, chakana, erp, crm, savdo, Nebim, NEBIM, system, v3, analitics',
       },
-      { name: 'author', content: 'Nebim' },
+      { name: 'author', content: 'Nebimorg' },
     ]);
     this.translate.setDefaultLang(Constants.DEFAULT_LANGUAGE);
     this.translate.use(settings.language);
